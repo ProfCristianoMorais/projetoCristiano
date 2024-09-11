@@ -1,0 +1,225 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .login-btn {
+    background-color: #e60000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../assets/crosstraining.jpg'); /* Substitua pelo caminho correto da imagem */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    position: relative;
+}
+
+/* Adicionando uma camada de sobreposição (overlay) */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajuste a opacidade conforme necessário */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #fff;
+    z-index: 2;
+}
+
+.hero-content h1 span {
+    color: #e60000;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: -50px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 3;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px; /* Para bordas arredondadas */
+}
+
+.service-item {
+    text-align: center;
+    flex: 1;
+}
+
+.service-item h3 {
+    color: #e60000;
+    margin-bottom: 10px;
+}
+
+.service-item img {
+    max-width: 50px; /* Ajuste o tamanho do ícone conforme necessário */
+}
+/* About Section */
+/* About Section */
+.about {
+    display: flex;
+    padding: 40px;
+    background-color: #f4f4f4;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Ajuste para a imagem à esquerda */
+.about-image {
+    flex: 1;
+    text-align: left;
+}
+
+.about-image img {
+    width: 100%; /* Ajuste conforme necessário */
+    border-radius: 10px; /* Bordas arredondadas para a imagem */
+}
+
+/* Ajuste para o conteúdo de texto à direita */
+.about-content {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.about-content h2 {
+    color: #e60000;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-content button {
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Estilo da seção à esquerda */
+.footer-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-left p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-left p span {
+    color: #e60000;
+}
+
+/* Estilo da seção à direita */
+.footer-right {
+    flex: 1;
+    min-width: 250px;
+    text-align: right;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    height: 30px;
+}
+
+/* Links de Termos e Privacidade */
+.footer-bottom p {
+    font-size: 0.875rem;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
